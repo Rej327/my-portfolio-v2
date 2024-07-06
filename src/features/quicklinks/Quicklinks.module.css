@@ -1,0 +1,33 @@
+.border {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #33cccc;
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+	margin-top: 1rem;
+	transition: 300ms ease;
+	cursor: pointer;
+}
+
+.border:hover {
+	scale: 1.1;
+}
+
+.iconColor {
+	font-size: 2rem;
+	color: #33cccc;
+}
+
+.iconColor:active {
+	opacity: 90;
+}
+
+.activeLight {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+}
+
+.activeDark {
+	box-shadow: 0 4px 8px rgba(255, 255, 255, 0.37);
+}
