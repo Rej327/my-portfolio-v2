@@ -9,7 +9,8 @@ const Contact = () => {
 
 			<Link
 				className={`${classes.btn} ${classes.btnIcon} ${classes.btnFacebook}`}
-				href="#"
+				href="https://www.facebook.com/resujeff27"
+				target="_blank"
 			>
 				<i className="fa fa-facebook"></i>
 				<span>Facebook</span>
@@ -23,14 +24,16 @@ const Contact = () => {
 			</Link>
 			<Link
 				className={`${classes.btn} ${classes.btnIcon} ${classes.btnLinkedIn}`}
-				href="#"
+				href="www.linkedin.com/in/jeffersonrsrrccn"
+				target="_blank"
 			>
 				<i className="fa fa-linkedin"></i>
 				<span>LinkedIn</span>
 			</Link>
 			<Link
 				className={`${classes.btn} ${classes.btnIcon} ${classes.btnGitHub}`}
-				href="#"
+				href="https://github.com/Rej327"
+				target="_blank"
 			>
 				<i className="fa fa-github"></i>
 				<span>GitHub</span>

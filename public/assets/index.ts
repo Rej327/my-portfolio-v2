@@ -43,7 +43,7 @@ export { default as postgresql } from "./stack/backend/postgresql.png";
 export { default as socketio } from "./stack/backend/socketio.png";
 export { default as sqlqueries } from "./stack/backend/sqlqueries.png";
 export { default as api } from "./stack/backend/api.png";
-export { default as localStorage } from "./stack/backend/localStorage.png";
+export { default as localStorage } from "./stack/backend/localstorage.png";
 
 //other stack
 export { default as agile } from "./stack/others/agile.png";
@@ -64,6 +64,6 @@ export { default as unittesting } from "./stack/others/unittesting.png";
 export { default as uxdesign } from "./stack/others/uxdesign.png";
 export { default as vitest } from "./stack/others/vitest.png";
 export { default as gitactions } from "./stack/others/gitactions.png";
-export { default as Mailmunch } from "./stack/others/Mailmunch.png";
-export { default as MailChimp } from "./stack/others/MailChimp.png";
+export { default as Mailmunch } from "./stack/others/mailmunch.png";
+export { default as MailChimp } from "./stack/others/mailChimp.png";
 export { default as i18next } from "./stack/others/i18.png";
