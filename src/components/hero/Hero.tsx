@@ -62,7 +62,7 @@ const Hero = ({ render, activeSection }: HeroProps) => {
 					</div>
 					<p className="text-2xl mt-4">Front End Developer</p>
 
-					<Link href={fileUrl} download className={classes.wrapper}>
+					<Link href={fileUrl} download target="_blank" className={classes.wrapper}>
 						<p>HIRE ME</p>
 					</Link>
 
