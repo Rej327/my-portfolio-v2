@@ -38,7 +38,7 @@ const Nav: React.FC = () => {
 				onClick={() => handleToggle()}
 				className={classes.hamburgerMenu}
 			>
-				<GiHamburgerMenu className="text-3xl" />
+				<GiHamburgerMenu className="text-3xl cursor-pointer" />
 			</div>
 			{toggle ? (
 				<div className={dark ? classes.menuLight : classes.menuDark}>
