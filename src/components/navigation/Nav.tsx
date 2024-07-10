@@ -38,7 +38,7 @@ const Nav: React.FC = () => {
 				onClick={() => handleToggle()}
 				className={classes.hamburgerMenu}
 			>
-				<GiHamburgerMenu className="text-2xl" />
+				<GiHamburgerMenu className="text-3xl" />
 			</div>
 			{toggle ? (
 				<div className={dark ? classes.menuLight : classes.menuDark}>
@@ -49,6 +49,7 @@ const Nav: React.FC = () => {
 						<Text
 							c={"dimmed"}
 							className="underline underline-offset-4 hover:no-underline"
+							ta='center'
 						>
 							V.1
 						</Text>

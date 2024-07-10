@@ -28,7 +28,7 @@ const About = () => {
 				)}
 
 				<p>
-					Hi! I’m Jefferson Resurreccion, and I am 24 years old. I
+					Hi! I’m Jefferson Resurreccion, and I am 25 years old. I
 					graduated from Southern Luzon State University year 2019
 					with a degree of Bachelor of Industrial Technology Major in
 					Computer Technology.
