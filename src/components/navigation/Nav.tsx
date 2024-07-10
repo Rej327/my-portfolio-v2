@@ -34,8 +34,11 @@ const Nav: React.FC = () => {
 				My Portfolio V.2
 			</Text>
 
-			<div className={classes.hamburgerMenu}>
-				<GiHamburgerMenu className="text-2xl" onClick={() => handleToggle()} />
+			<div
+				onClick={() => handleToggle()}
+				className={classes.hamburgerMenu}
+			>
+				<GiHamburgerMenu className="text-2xl" />
 			</div>
 			{toggle ? (
 				<div className={dark ? classes.menuLight : classes.menuDark}>

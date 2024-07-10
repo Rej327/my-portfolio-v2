@@ -1,6 +1,6 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
-import { Tooltip, useMantineColorScheme } from "@mantine/core";
+import React, { useState } from "react";
+import { Skeleton, Tooltip, useMantineColorScheme } from "@mantine/core";
 import { projects } from "./ProjectData";
 import { BsDot } from "react-icons/bs";
 import { GoDotFill } from "react-icons/go";
@@ -8,6 +8,7 @@ import { FaRegFileCode } from "react-icons/fa";
 import Link from "next/link";
 
 const Projects = () => {
+	const [loading, setLoading] = useState(true);
 	const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 	const dark = colorScheme === "light";
 
@@ -22,29 +23,44 @@ const Projects = () => {
 					className="md:flex md:flex-row-reverse gap-4 my-10 items-center"
 				>
 					<div className="hidden md:flex flex-col gap-2">
-						{data.img.map((img, i) => (
-							<Image
-								key={i}
-								src={img}
-								alt={`${data.title}-Image`}
-								height={400}
-								width={600}
-							/>
-						))}
+						{loading ? (
+							<>
+								{data.img.map((img, i) => (
+									<Image
+										key={i}
+										src={img}
+										alt={`${data.title}-Image`}
+										height={400}
+										width={600}
+									/>
+								))}
+							</>
+						) : (
+							<>
+								<Skeleton height={270} radius={5} width={570} />
+								<Skeleton height={270} radius={5} width={570} />
+							</>
+						)}
 					</div>
 					<div className="max-w-[600px] flex flex-col gap-2">
 						<h2 className="text-xl font-semibold">{data.title}</h2>
-						<div className="flex flex-row gap-2 md:hidden">
-							{data.img.slice(0, 1).map((img, i) => (
-								<Image
-									key={i}
-									src={img}
-									alt={`${data.title}-Image`}
-									height={400}
-									width={600}
-								/>
-							))}
-						</div>
+
+						{loading ? (
+							<div className="flex flex-row gap-2 md:hidden">
+								{data.img.slice(0, 1).map((img, i) => (
+									<Image
+										key={i}
+										src={img}
+										alt={`${data.title}-Image`}
+										height={400}
+										width={600}
+									/>
+								))}
+							</div>
+						) : (
+							<Skeleton radius={5} height={225} width='auto' />
+						)}
+
 						<div className="flex gap-2">
 							<h2 className="font-semibold">{data.duration}</h2>
 						</div>

@@ -1,19 +1,32 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { about, me } from "../../../public/assets";
+import { Skeleton } from "@mantine/core";
 
 const About = () => {
+	const [loading, setLoading] = useState(true);
+
 	return (
 		<div className="max-w-[1200px] mx-auto mb-10 px-2">
 			<h1 className="text-2xl text-center my-10">About Me</h1>
 			<div className="flex flex-col gap-4 text-justify text-lg font-light ">
-				<Image
-					src={me}
-					alt="My Picture"
-					width={300}
-					height={300}
-					className="md:hidden mx-auto"
-				/>
+				{loading ? (
+					<Image
+						src={me}
+						alt="My Picture"
+						width={300}
+						height={300}
+						className="md:hidden mx-auto"
+					/>
+				) : (
+					<Skeleton
+						className="mx-auto"
+						width={300}
+						height={300}
+						mb="xl"
+					/>
+				)}
+
 				<p>
 					Hi! I’m Jefferson Resurreccion, and I am 24 years old. I
 					graduated from Southern Luzon State University year 2019

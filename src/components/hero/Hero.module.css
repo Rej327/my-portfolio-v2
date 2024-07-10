@@ -140,8 +140,42 @@
 }
 
 @media screen and (max-width: 573px) {
-	.bodyDark, .bodyLight {
+	.bodyDark,
+	.bodyLight {
 		padding-bottom: 1rem;
 	}
 }
 
+.wrapper {
+	text-align: center;
+	cursor: pointer;
+	margin-top: .5rem;
+}
+
+.wrapper p {
+	color: #fff;
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: linear-gradient(
+		to right,
+		#33cccc 10%,
+		#338fcc 50%,
+		#33ccab 60%
+	);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 1.5s linear infinite;
+	display: inline-block;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
