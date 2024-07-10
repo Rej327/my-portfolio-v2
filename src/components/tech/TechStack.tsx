@@ -17,7 +17,7 @@ const TechStacks: React.FC<StacksProps> = ({ techStack, title }) => {
 	const dark = colorScheme === "dark";
 
 	return (
-		<div className="w-fit">
+		<div className="w-fit mx-auto">
 			<Text ta="center" my={10} fz={20}>
 				{title}
 			</Text>
@@ -25,8 +25,8 @@ const TechStacks: React.FC<StacksProps> = ({ techStack, title }) => {
 			<div
 				className={
 					!dark
-						? "border-[#F1F1F1] border-2 grid grid-cols-5 gap-4 items-center w-[390px] p-4 rounded-md"
-						: "border-[#1A1A1A] border-2 grid grid-cols-5 gap-4 items-center w-[390px] p-4 rounded-md"
+						? "border-[#F1F1F1] border-2 grid grid-cols-5 gap-4 items-center max-w-[390px] p-4 rounded-md"
+						: "border-[#1A1A1A] border-2 grid grid-cols-5 gap-4 items-center max-w-[390px] p-4 rounded-md"
 				}
 			>
 				{techStack.map((stack, index) => (

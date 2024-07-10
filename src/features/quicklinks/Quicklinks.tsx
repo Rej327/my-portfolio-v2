@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCode, FaInfo } from "react-icons/fa";
 import { GrContactInfo, GrProjects } from "react-icons/gr";
 import classes from "./Quicklinks.module.css";
@@ -6,14 +6,20 @@ import { Tooltip, useMantineColorScheme } from "@mantine/core";
 
 type RenderType = {
 	render: (section: string) => void;
-	activeSection: string;
+	activeSection?: string; // Made activeSection optional
 };
 
-const Quicklinks = ({ render, activeSection }: RenderType) => {
+const Quicklinks = ({ render, activeSection = "info" }: RenderType) => { // Default to "info"
 	const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 	const dark = colorScheme === "light";
 
 	const themeShadow = dark ? classes.activeLight : classes.activeDark;
+
+	useEffect(() => {
+		if (!activeSection) {
+			render("info"); // Automatically select "info" if no section is active
+		}
+	}, [activeSection, render]);
 
 	return (
 		<div className="flex gap-4">

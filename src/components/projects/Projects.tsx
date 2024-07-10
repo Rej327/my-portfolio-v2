@@ -14,14 +14,14 @@ const Projects = () => {
 	const theme = dark ? "text-[#4b4b4b]" : "text-[#text-[#dfdfdf]]";
 
 	return (
-		<div className={`${theme} max-w-[1200px] mx-auto`}>
+		<div className={`${theme} max-w-[1200px] mx-auto px-2`}>
 			<h1 className="text-2xl text-center my-10">My Projects</h1>
 			{projects?.map((data, i) => (
 				<div
 					key={i}
-					className="flex flex-row-reverse gap-4 my-10 items-center"
+					className="md:flex md:flex-row-reverse gap-4 my-10 items-center"
 				>
-					<div className="flex flex-col gap-2">
+					<div className="hidden md:flex flex-col gap-2">
 						{data.img.map((img, i) => (
 							<Image
 								key={i}
@@ -34,6 +34,17 @@ const Projects = () => {
 					</div>
 					<div className="max-w-[600px] flex flex-col gap-2">
 						<h2 className="text-xl font-semibold">{data.title}</h2>
+						<div className="flex flex-row gap-2 md:hidden">
+							{data.img.slice(0, 1).map((img, i) => (
+								<Image
+									key={i}
+									src={img}
+									alt={`${data.title}-Image`}
+									height={400}
+									width={600}
+								/>
+							))}
+						</div>
 						<div className="flex gap-2">
 							<h2 className="font-semibold">{data.duration}</h2>
 						</div>
@@ -79,7 +90,7 @@ const Projects = () => {
 								<li key={i}>{list}</li>
 							))}
 						</ul>
-						<div className="flex gap-4 mx-auto w-fit my-10">
+						<div className="flex gap-4 mx-auto w-fit mt-4 md:my-10">
 							<div className="flex items-center">
 								<GoDotFill className="text-[#33CCCC] text-sm" />
 								<Link href={data.demo} target="_blank">

@@ -16,26 +16,28 @@ const Hero = ({ render, activeSection }: HeroProps) => {
 
 	return (
 		<div className={dark ? classes.bodyLight : classes.bodyDark}>
-			<div className="mx-auto w-[1200px] flex justify-between flex-row-reverse items-center">
+			<div className={classes.container}>
 				<Image
 					src={me}
 					alt="My Picture"
 					width={500}
 					height={500}
-					className="mt-10"
+					className={classes.me}
 				/>
-				<div className="flex flex-col items-center mt-28">
-					<div className="relative">
-						<h1 className="text-8xl">
-							<span className="text-[#33CCCC]">Hi</span>, I am Jeff
-						</h1>
+
+				<div className={classes.context}>
+					<div className={classes.text}>
 						<Image
 							src={wave}
 							alt="Wave Gif"
 							width={100}
 							height={100}
-							className="absolute -top-24 right-48"
+							className="mt-10 mx-auto"
 						/>
+						<h1 className="text-6xl md:text-8xl text-center">
+							<span className="text-[#33CCCC]">Hi</span>, I am
+							Jeff
+						</h1>
 					</div>
 					<p className="text-2xl mt-4">Front End Developer</p>
 

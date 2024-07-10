@@ -1,0 +1,60 @@
+.navItemContainer {
+	position: relative;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+}
+
+.hamburgerMenu {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+
+.desktopMenu {
+	display: none;
+}
+
+.menuLight {
+	position: absolute;
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 0.5rem;
+	top: 2.5rem;
+	right: 0.5rem;
+	background-color: white;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.menuDark {
+	position: absolute;
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 0.5rem;
+	top: 2.5rem;
+	right: 0.5rem;
+	background-color: #242424;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+@media only screen and (min-width: 572px) {
+	.hamburgerMenu,
+	.menu {
+		display: none;
+	}
+
+	.desktopMenu {
+		position: absolute;
+		display: flex;
+		gap: 1rem;
+		top: 0.5rem;
+		right: 0.5rem;
+	}
+}

@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Contact = () => {
 	return (
-		<div className={classes.socialPlatforms}>
-			<h1 className="text-2xl mb-8">My Social Accounts</h1>
+		<div className={`${classes.socialPlatforms} mb-10 md:mb-0`}>
+			<h1 className="text-2xl my-8">My Social Accounts</h1>
 
 			<Link
 				className={`${classes.btn} ${classes.btnIcon} ${classes.btnFacebook}`}

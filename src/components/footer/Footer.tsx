@@ -6,12 +6,12 @@ const Footer = () => {
 	const dark = colorScheme === "light";
 
 	return (
-		<div className={dark ? "w-auto bg-[#F2F2F2] py-10" : "w-auto bg-[#1A1A1A] py-10"}>
+		<div className={dark ? "w-auto bg-[#F2F2F2] py-10 px-1" : "w-auto bg-[#1A1A1A] py-10 px-1"}>
 			<Text c="dimmed" ta="center" size="sm">
 				Created by Jefferson Resurreccion
 			</Text>
 			<Text c="dimmed" ta="center" size="sm">
-				Created from NextJS, TypeScript, TailwindCSS and Mantine
+				Created from Next.js, TypeScript, Tailwind CSS and Mantine
 			</Text>
 			<Text c="dimmed" ta="center" size="sm">
 				© 2024. All rights reserved

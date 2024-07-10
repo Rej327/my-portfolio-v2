@@ -1,15 +1,19 @@
 import Image from "next/image";
 import React from "react";
-import { about } from "../../../public/assets";
+import { about, me } from "../../../public/assets";
 
 const About = () => {
 	return (
-		<div className="max-w-[1200px] mx-auto mb-10">
-			<div className="flex gap-4 mt-10">
-				<Image src={about} alt="About Icon" width={50} height={50} />
-				<h2 className="font-semibold text-xl">About Me</h2>
-			</div>
-			<div className="flex flex-col gap-4 ml-16 -mt-4 text-justify text-lg font-light">
+		<div className="max-w-[1200px] mx-auto mb-10 px-2">
+			<h1 className="text-2xl text-center my-10">About Me</h1>
+			<div className="flex flex-col gap-4 text-justify text-lg font-light ">
+				<Image
+					src={me}
+					alt="My Picture"
+					width={300}
+					height={300}
+					className="md:hidden mx-auto"
+				/>
 				<p>
 					Hi! I’m Jefferson Resurreccion, and I am 24 years old. I
 					graduated from Southern Luzon State University year 2019

@@ -21,9 +21,9 @@ const Index = () => {
 
 			{activeSection === "" && <About />}
 			{activeSection === "info" && <About />}
+			{activeSection === "projects" && <Projects />}
 			{activeSection === "tech" && <TechStack />}
 			{activeSection === "contact" && <Contact />}
-			{activeSection === "projects" && <Projects />}
 
 			<Footer />
 		</div>
