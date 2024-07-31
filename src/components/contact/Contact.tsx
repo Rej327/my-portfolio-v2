@@ -17,10 +17,10 @@ const Contact = () => {
 			</Link>
 			<Link
 				className={`${classes.btn} ${classes.btnIcon} ${classes.btnGooglePlus}`}
-				href="#"
+				href="mailto:resujeff27@gmail.com"
 			>
-				<i className="fa fa-google-plus"></i>
-				<span>Google+</span>
+				<i className="fa fa-google"></i>
+				<span>Google</span>
 			</Link>
 			<Link
 				className={`${classes.btn} ${classes.btnIcon} ${classes.btnLinkedIn}`}
@@ -29,6 +29,14 @@ const Contact = () => {
 			>
 				<i className="fa fa-linkedin"></i>
 				<span>LinkedIn</span>
+			</Link>
+			<Link
+				className={`${classes.btn} ${classes.btnIcon} ${classes.btnViber}`}
+				href="viber://chat?number=+639502433069"
+				target="_blank"
+			>
+				<i className="fa fa-phone"></i>
+				<span>Viber</span>
 			</Link>
 			<Link
 				className={`${classes.btn} ${classes.btnIcon} ${classes.btnGitHub}`}

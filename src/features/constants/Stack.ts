@@ -45,7 +45,8 @@ import {
 	vite,
 	vitest,
 	wordpress,
-	json
+	json,
+	shopify
 } from "../../../public/assets";
 
 const frontend = [
@@ -116,6 +117,10 @@ const frontend = [
 	{
 		stack: "WordPress",
 		icon: wordpress,
+	},
+	{
+		stack: "Shopify",
+		icon: shopify,
 	},
 ];
 

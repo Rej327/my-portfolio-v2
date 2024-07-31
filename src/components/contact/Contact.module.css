@@ -123,3 +123,13 @@
 .btnLinkedIn > span {
 	background: #007bb6;
 }
+
+/*Viber*/
+.btnViber:hover > i,
+.btnViber:focus > i {
+	color: #783AAA;
+}
+
+.btnViber > span {
+	background: #783AAA;
+}

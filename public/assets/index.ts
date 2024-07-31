@@ -8,6 +8,10 @@ export { default as catanauan } from "./img/catanauan.png";
 export { default as disaster } from "./img/disaster.png";
 export { default as catanauan2 } from "./img/catanauan2.png";
 export { default as disaster2 } from "./img/disaster2.png";
+export { default as shopify_one } from "./img/shopify_one.png";
+export { default as shopify_two } from "./img/shopify_two.png";
+export { default as wordpress_one } from "./img/wordpress_one.png";
+export { default as wordpress_two } from "./img/wordpress_two.png";
 
 //frontend stack
 export { default as html } from "./stack/frontend/html.png";
@@ -28,6 +32,7 @@ export { default as chakraui } from "./stack/frontend/chakraui.png";
 export { default as vite } from "./stack/frontend/vite.png";
 export { default as tailwindcss } from "./stack/frontend/tailwindcss.png";
 export { default as wordpress } from "./stack/frontend/wordpress.webp";
+export { default as shopify } from "./stack/frontend/shopify.webp";
 
 //backend stack
 export { default as codeigniter } from "./stack/backend/codeigniter.png";

@@ -12,8 +12,14 @@ import {
 	Mailmunch,
 	mantine,
 	redux,
+	shopify,
+	shopify_one,
+	shopify_two,
 	tailwindcss,
 	vite,
+	wordpress,
+	wordpress_one,
+	wordpress_two,
 } from "../../../public/assets";
 
 type Tech = {
@@ -33,6 +39,15 @@ type ProjectType = {
 	technology: Tech[];
 	features: Features;
 	code: string;
+	demo: string;
+};
+
+type LessCode = {
+	img: StaticImageData;
+	title: string;
+	duration: string;
+	technology: Tech[];
+	features: string[];
 	demo: string;
 };
 
@@ -131,5 +146,48 @@ export const projects: ProjectType[] = [
 		},
 		code: "https://github.com/Rej327/DiscoverCatanauan",
 		demo: "https://discovercatanauan.netlify.app/",
+	},
+];
+
+export const lessCode: LessCode[] = [
+	{
+		img: shopify_one,
+		title: "Cymbal Sheesh",
+		duration: "Project Duration: 1 day",
+		technology: [
+			{
+				name: "Shopify",
+				icon: shopify,
+			},
+		],
+		features: [
+			"Add to Cart Function",
+			"Data Collection for Filtering Items",
+			"Filter Function",
+			"Search Function",
+			"Cart Total Price Calculation",
+			"Subscription Function",
+		],
+		demo: "https://www.youtube.com/watch?v=8ZtEUIp5WXs",
+	},
+	{
+		img: wordpress_one,
+		title: "Event Center",
+		duration: "Project Duration: 1 day",
+		technology: [
+			{
+				name: "Wordpress",
+				icon: wordpress,
+			},
+		],
+		features: [
+			"Contact Information and Support",
+			"Event Details",
+			"Package Details",
+			"Coordinator Information",
+			"Static Data Retrieval",
+			"Contact Form Function",
+		],
+		demo: "https://www.youtube.com/watch?v=2kIZ46cFErs",
 	},
 ];
