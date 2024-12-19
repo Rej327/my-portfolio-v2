@@ -46,7 +46,12 @@ import {
 	vitest,
 	wordpress,
 	json,
-	shopify
+	shopify,
+	reactnative,
+	expo,
+	nativewind,
+	firebase,
+	clerk
 } from "../../../public/assets";
 
 const frontend = [
@@ -122,6 +127,18 @@ const frontend = [
 		stack: "Shopify",
 		icon: shopify,
 	},
+	{
+		stack: "React Native",
+		icon: reactnative,
+	},
+	{
+		stack: "Expo Go",
+		icon: expo,
+	},
+	{
+		stack: "Native Wind",
+		icon: nativewind,
+	},
 ];
 
 const backend = [
@@ -172,6 +189,10 @@ const backend = [
 	{
 		stack: "DataMapper",
 		icon: datamapper,
+	},
+	{
+		stack: "Firebase",
+		icon: firebase,
 	},
 ];
 
@@ -247,6 +268,10 @@ const others = [
 	{
 		stack: "Trello",
 		icon: trello,
+	},
+	{
+		stack: "Clerk",
+		icon: clerk,
 	},
 ];
 

@@ -12,6 +12,8 @@ export { default as shopify_one } from "./img/shopify_one.png";
 export { default as shopify_two } from "./img/shopify_two.png";
 export { default as wordpress_one } from "./img/wordpress_one.png";
 export { default as wordpress_two } from "./img/wordpress_two.png";
+export { default as ec } from "./img/ec.png";
+export { default as ec2 } from "./img/ec2.png";
 
 //frontend stack
 export { default as html } from "./stack/frontend/html.png";
@@ -33,6 +35,9 @@ export { default as vite } from "./stack/frontend/vite.png";
 export { default as tailwindcss } from "./stack/frontend/tailwindcss.png";
 export { default as wordpress } from "./stack/frontend/wordpress.webp";
 export { default as shopify } from "./stack/frontend/shopify.webp";
+export { default as reactnative } from "./stack/frontend/reactnative.png";
+export { default as expo } from "./stack/frontend/expo.png";
+export { default as nativewind } from "./stack/frontend/nativewind.png";
 
 //backend stack
 export { default as codeigniter } from "./stack/backend/codeigniter.png";
@@ -49,6 +54,7 @@ export { default as socketio } from "./stack/backend/socketio.png";
 export { default as sqlqueries } from "./stack/backend/sqlqueries.png";
 export { default as api } from "./stack/backend/api.png";
 export { default as localStorage } from "./stack/backend/localstorage.png";
+export { default as firebase } from "./stack/backend/firebase.webp";
 
 //other stack
 export { default as agile } from "./stack/others/agile.png";
@@ -72,3 +78,4 @@ export { default as gitactions } from "./stack/others/gitactions.png";
 export { default as Mailmunch } from "./stack/others/mailmunch.png";
 export { default as MailChimp } from "./stack/others/mailchimp.png";
 export { default as i18next } from "./stack/others/i18.png";
+export { default as clerk } from "./stack/others/clerk.webp";
