@@ -9,7 +9,7 @@ const Contact = () => {
 
 			<Link
 				className={`${classes.btn} ${classes.btnIcon} ${classes.btnFacebook}`}
-				href="https://www.facebook.com/resujeff27"
+				href="https://www.facebook.com/resujeff327"
 				target="_blank"
 			>
 				<i className="fa fa-facebook"></i>
