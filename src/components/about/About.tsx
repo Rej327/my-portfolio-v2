@@ -28,23 +28,26 @@ const About = () => {
 				)}
 
 				<p>
-					Hi! I’m Jefferson Resurreccion, and I am 25 years old. I
-					graduated from Southern Luzon State University year 2019
-					with a degree of Bachelor of Industrial Technology Major in
-					Computer Technology.
+					Hi! I’m Jefferson Resurreccion, 26 years old, a Front-End
+					Developer with two years of freelance experience
+					specializing in modern JavaScript frameworks, particularly
+					React.js, Next.js, and React Native.
 				</p>
 				<p>
-					On October 2022 I started my study for being a Front-End
-					Developer and learned many programming languages and
-					programming technology. As of now my goal is to become a
-					Front-End developer and soon is to become a Full Stack
-					Developer.
+					I have a strong foundation in building interactive,
+					high-performance, and user-friendly web applications. My
+					expertise includes developing responsive and optimized UI
+					components using Tailwind CSS, Chakra UI, and Mantine UI.
+					Additionally, I have a fundamental understanding of backend
+					development using firebase, PHP and PHP frameworks such as
+					CodeIgniter
 				</p>
 				<p>
-					From January 2024 to April 2024, I trained in web
-					development for 3 months under Village88 Inc, learning
-					various technologies such as Web Fundamentals, Responsive
-					Design, PHP, JavaScript, and Front End Development.
+					To solidify my skills, I attended an almost four-month
+					intensive training at Village 88, where I gained hands-on
+					experience in full-stack web development. This training
+					deepened my expertise in modern front-end frameworks,
+					backend technologies, and industry best practices.
 				</p>
 				<p>
 					During my studies to become a frontend developer I've
@@ -54,10 +57,10 @@ const About = () => {
 					employee of the company that I will be working with.
 				</p>
 				<p>
-					I see myself as an enthusiastic, self-motivated, reliable,
-					responsible and hard-working person. I am fond in Front End
-					developing, and I love to create beautiful and performant
-					websites with enjoyable user experiences.
+					During my intensive four-month training at Village 88, I
+					completed 213 coding assignments covering both front-end and
+					back-end development, which strengthened my technical
+					expertise in modern web technologies.
 				</p>
 			</div>
 		</div>
